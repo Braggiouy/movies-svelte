@@ -1,4 +1,5 @@
 <script>
+  import Movie from './Movie.svelte'
   let value = "";
   let totalMovies = []
   let loading = true
@@ -29,11 +30,15 @@
 {#if loading}
 <strong>Loading ...</strong>
 {:else}
-{#if totalMovies.length > 0}
-<strong>We found {totalMovies.length} movies</strong>
+  {#each totalMovies as {Title, Poster, Year} , index}
+    <Movie
+    index = {index}
+    title = {Title}
+    poster = {Poster}
+    year = {Year}/>
 {:else}
 <strong>We found no movies</strong>
-{/if}
+{/each}
 {/if}
   <!-- {  
   totalMovies.length > 0 ? `We found ${totalMovies.length} movies` : 'We found no movies'
