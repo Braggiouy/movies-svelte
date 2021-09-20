@@ -20,7 +20,7 @@
   }
 </script>
 
-<main>
+<main class="singleCounter">
   <p>Amount {count}</p>
   <p>{isEvenOrOdd}</p>
   <button on:click={increase}>Increase</button>
@@ -28,7 +28,7 @@
 </main>
 
 <style>
-  main {
+  .singleCounter {
     text-align: center;
     padding: 1em;
     max-width: 240px;

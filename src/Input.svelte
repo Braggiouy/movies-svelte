@@ -17,7 +17,7 @@
 </script>
 
 <!-- HTML -->
-<div>
+<div class="inputBox">
 <input placeholder="Search for a movie" value = {value} on:input={handleInput} />
 </div>
 {#await response}
@@ -36,3 +36,12 @@
 {:catch error}
   <p>❌ There has been an {error}</p>
 {/await}
+
+<!-- CSS -->
+<style>
+.inputBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>

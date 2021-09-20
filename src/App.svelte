@@ -7,31 +7,41 @@
 </script>
 
 <!-- HTML -->
-<h1>Search Movies 🍿</h1>
-<Input />
 
-<div>
+<nav class="navbar">
+<h1>Search Movies 🍿</h1>
+</nav>
+<Input />
+<div class="counter">
   <Counter count={4} />
   <Counter maxCounter={8} />
   <Counter maxCounter={6} />
 </div>
 
+
 <!-- CSS -->
 <style>
-	div {
+
+
+	.navbar {
 		display: flex;
-		flex-direction: row;
+		justify-content: center;
 		align-items: center;
+		flex-direction: column;
 	}
 
-	/* section {
+	.counter {
 		display: flex;
-		align-items: center;
 		flex-direction: row;
-	} */
-	
+		align-items: center;
+		justify-content: center;
+		border: 2px solid #7389ae;
+		border-radius: 10px;
+		background-color: #B5BAD0;
+	}
+
 	h1 {
-		font-size: 32px;
+		font-size: 24px;
 	}
 
 
