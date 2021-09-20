@@ -3,13 +3,14 @@
 </script>
 
 <div class="movieBox">
-
+<div class="description">
   <p>
     {#if 2021 - year < 5}
     <i>🆕</i>
     {/if}
   {year} - {title}
   </p>
+</div>
   <img src={poster} alt={title} />
 
 </div>
@@ -21,9 +22,20 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
+  border: 4px solid black;
+  border-radius: 10px;
   width: 300px;
-  margin: 5px;
+  margin: 2px;
+  background-color: bisque  ;
+}
+
+.description {
+  margin: 10px;
+  padding: 2px;
+}
+
+img {
+ object-fit: cover;
 }
 
 
