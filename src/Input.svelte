@@ -1,3 +1,4 @@
+<!-- Javascript -->
 <script>
   import Movie from "./Movie.svelte";
   let value = "";
@@ -9,14 +10,16 @@
 
   $: if (value.length > 2) {
     response = fetch(`http://www.omdbapi.com/?s=${value}&apikey=3b970e59`)
-    .then((res) => !res.ok() && new Error("theref asfa fas hr hrt "))
+    // .then((res) => !res.ok() && new Error("theref asfa fas hr hrt "))
       .then((res) => res.json())
       .then((apiResponse) => apiResponse.Search || []);
   }
 </script>
 
+<!-- HTML -->
+<div>
 <input placeholder="Search for a movie" value = {value} on:input={handleInput} />
-
+</div>
 {#await response}
   <strong>Loading ...</strong>
 {:then movies}
