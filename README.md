@@ -6,7 +6,7 @@
 
 ![](svelteCapture.png)
 
-#Get an the key for the API from http://www.omdbapi.com/
+# Get an the key for the API from http://www.omdbapi.com/
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
 
