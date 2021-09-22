@@ -6,7 +6,9 @@
 
 # svelte app
 
-## 🎥 Just a practice and simple movie-finder website, using Svelte, CSS Vanilla, and OMDB API. 🎬 
+## 🎥 Just a practice and simple movie-finder website, using Svelte, CSS Vanilla, and OMDB API. 🎬
+
+## With a simple example of a counter 😆 
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
 
